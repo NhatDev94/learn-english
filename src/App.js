@@ -51,9 +51,9 @@ function App() {
         </div>
         <div className="w-4/5 content relative top-[60px] left-[20%] py-2 px-5">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="learning" element={<Learning />} />
-            <Route path="/review" element={<Review />} />
+            <Route path="/learn-english" element={<Home />} />
+            <Route path="/learn-english/learning" element={<Learning />} />
+            <Route path="/learn-english/review" element={<Review />} />
           </Routes>
         </div>
       </div>
