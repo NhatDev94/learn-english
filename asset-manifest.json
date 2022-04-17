@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/learn-english/static/css/main.37bf9022.css",
+    "main.js": "/learn-english/static/js/main.94cec298.js",
+    "static/js/787.62aeaf1e.chunk.js": "/learn-english/static/js/787.62aeaf1e.chunk.js",
+    "index.html": "/learn-english/index.html",
+    "main.37bf9022.css.map": "/learn-english/static/css/main.37bf9022.css.map",
+    "main.94cec298.js.map": "/learn-english/static/js/main.94cec298.js.map",
+    "787.62aeaf1e.chunk.js.map": "/learn-english/static/js/787.62aeaf1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37bf9022.css",
+    "static/js/main.94cec298.js"
+  ]
+}
