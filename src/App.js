@@ -11,15 +11,15 @@ function App() {
   const sidebar = [
     {
       name: "Dashboard",
-      path: "/",
+      path: "/learn-english",
     },
     {
       name: "Learning",
-      path: "/learning",
+      path: "/learn-english/learning",
     },
     {
       name: 'Review',
-      path: '/review'
+      path: '/learn-english/review'
     }
   ];
 
