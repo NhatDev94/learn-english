@@ -49,7 +49,7 @@ function Provider({ children }) {
     })
 
     if (newLearnings.length < 5) {
-      const result = service.pushMoreVocabularyLearning(all, newLearnings)
+      const result = service.pushMoreVocabularyLearning(newAll)
       newLearnings = [...newLearnings, result]
     }
 
