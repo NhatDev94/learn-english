@@ -43,7 +43,7 @@ function Provider({ children }) {
       if (current.vocabulary === item.vocabulary) item = current
       return item
     })
-    const newLearnings = learnings.filter(item => {
+    let newLearnings = learnings.filter(item => {
       if (current.vocabulary === item.vocabulary) item =current
       return item.type !== 'learned'
     })
