@@ -17,7 +17,6 @@ function Provider({ children }) {
 
       if (resLearnings.data.length === 0) {
         const [learnings, allVocabulary] = service.createLearningDefault(resAll.data);
-        console.log(learnings);
         const current = service.setCurrentVocabularyHandle(learnings, notAgain)
 
         updateDatabse(allVocabulary, learnings)
@@ -27,6 +26,7 @@ function Provider({ children }) {
         setCurrentVocabulary(current)
         return;
       }
+
       const current = service.setCurrentVocabularyHandle(resLearnings.data, notAgain)
       setAll(resAll.data);
       setLearnings(resLearnings.data);
@@ -49,8 +49,9 @@ function Provider({ children }) {
     })
 
     if (newLearnings.length < 5) {
-      const result = service.pushMoreVocabularyLearning(newAll)
+      const [result, list] = service.pushMoreVocabularyLearning(newAll)
       newLearnings = [...newLearnings, result]
+      newAll = list
     }
 
     const newCurrentVocabulary = service.setCurrentVocabularyHandle(newLearnings, newNotAgain)

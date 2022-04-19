@@ -25,9 +25,11 @@ export const pushMoreVocabularyLearning = (list) => {
     list.map(item => {
         if(pushList.length < 6 && item.type !== 'learned' && item.type !== 'learning') {
             pushList = [...pushList, item]
+            item.type = 'learning'
         }
+        return item
     })
-    return pushList
+    return [pushList, list]
 }
 
 const sortByLearnNum = (list, type = null) => {
